@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/contact.css"
 import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
 const Contact = () => {
+    const [copySuccess, setCopySuccess] = useState('');
+    const [show, setShow] = useState(false)
+
+    const copyToClipBoard = async copyMe => {
+        await navigator.clipboard.writeText(copyMe);
+        setCopySuccess('Copied!');
+        setShow(!show)
+    };
     return (
         <Router>
             <div id="contact" className='contact-container'>
@@ -28,8 +36,9 @@ const Contact = () => {
                                 <i className="fa-solid fa-envelope-open-text"></i>
                                 <div className="text">
                                     <h5>Mail</h5>
-                                    <p>pndspacas@gmail.com</p>
+                                    <p onClick={() => copyToClipBoard("pndspacas@gmail.com")}>pndspacas@gmail.com</p>
                                 </div>
+                                {!show && <span>{copySuccess}</span>}
                             </div>
                         </div>
                     </div>

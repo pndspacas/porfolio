@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "../styles/projects.css"
 import github from "../images/github-stalker.png"
 import boosted from "../images/boosted.png"
@@ -7,6 +7,9 @@ import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
+
+
+
 const Projects = () => {
     return (
         <Router>
