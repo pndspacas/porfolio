@@ -8,7 +8,7 @@ const Contact = () => {
     const [copySuccess, setCopySuccess] = useState('');
     const [show, setShow] = useState(false)
 
-    const copyToClipBoard = async copyMe => {
+    const copyToClipBoard = async (copyMe: any) => {
         await navigator.clipboard.writeText(copyMe);
         setCopySuccess('Copied!');
         setShow(!show)
