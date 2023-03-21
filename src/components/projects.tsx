@@ -18,7 +18,7 @@ const Projects = () => {
                     <h2>Projects</h2>
                     <p>Each project is a unique piece of development 🧩</p>
                     <div className="projects">
-                        <img src={github} />
+                        <img />
                         <div className="projects-card">
                             <h3>GitHub Stalker</h3>
                             <p>This is the Github Stalker, allow users to stalker the profiles that they want.</p>
