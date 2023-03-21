@@ -6,7 +6,6 @@ export const Navbar = () => {
         <div>
             <nav>
                 <ul className='nav-links'>
-                    <h5>Pedro.dev</h5>
                 </ul>
                 <ul className='nav-links'>
                     <Link to="home" spy={true} smooth={true} offset={0} duration={500}><li>Home</li></Link>
