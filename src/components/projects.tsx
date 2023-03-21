@@ -18,7 +18,7 @@ const Projects = () => {
                     <h2>Projects</h2>
                     <p>Each project is a unique piece of development 🧩</p>
                     <div className="projects">
-                        <img alt="project image" />
+                        <img src={github} />
                         <div className="projects-card">
                             <h3>GitHub Stalker</h3>
                             <p>This is the Github Stalker, allow users to stalker the profiles that they want.</p>
@@ -31,7 +31,7 @@ const Projects = () => {
                     </div>
                     <div className="projects">
 
-                        <img alt="project image" />
+                        <img src={social} />
                         <div className="projects-card">
                             <h3>Social App</h3>
                             <p>A MVP social app website is an online platform that allows users to create, like and delete posts.</p>
@@ -44,7 +44,7 @@ const Projects = () => {
                     </div>
                     <div className="projects">
 
-                        <img alt="project image" />
+                        <img src={boosted} />
                         <div className="projects-card">
                             <h3>Boosted E-commerce</h3>
                             <p>A MPV E-commerce website is an online platform that allows users to buy their favourite sneakers.</p>
