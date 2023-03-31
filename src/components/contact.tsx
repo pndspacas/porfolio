@@ -6,12 +6,12 @@ import {
 } from "react-router-dom";
 const Contact = () => {
     const [copySuccess, setCopySuccess] = useState('');
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(true)
 
     const copyToClipBoard = async (copyMe: any) => {
         await navigator.clipboard.writeText(copyMe);
-        setShow(!show)
         setCopySuccess('Copied!');
+        setShow(!show)
     };
     return (
         <Router>
