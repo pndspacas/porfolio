@@ -51,7 +51,7 @@ const Projects = () => {
                         </div>
                         <div className="projects-card">
                             <h3>Boosted E-commerce</h3>
-                            <p>A MPV E-commerce website is an online platform that allows users to buy their favourite sneakers.</p>
+                            <p>A MVP E-commerce website is an online platform that allows users to buy their favourite sneakers.</p>
                             <div className='links'>
                                 <Link to="https://github.com/pndspacas/boosted-ecommerce" target="_blank"><span>Code<i className="fa-brands fa-github"></i>
                                 </span></Link>
