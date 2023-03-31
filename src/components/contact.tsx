@@ -10,8 +10,8 @@ const Contact = () => {
 
     const copyToClipBoard = async (copyMe: any) => {
         await navigator.clipboard.writeText(copyMe);
-        setCopySuccess('Copied!');
         setShow(!show)
+        setCopySuccess('Copied!');
     };
     return (
         <Router>
