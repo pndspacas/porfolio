@@ -15,7 +15,7 @@ const Images = () => {
                 <main>
                     <section className='section-container'>
                         <div className="text-header">
-                            <h1>Front-End Developer4<span className="wave">👋🏻</span></h1>
+                            <h1>Front-End Developer<span className="wave">👋🏻</span></h1>
                             <div className='text-container'>
                                 <p>Hi, I'm Pedro Paças. A Front-end Developer based in Lisbon, Portugal</p>
                                 <Link to="https://www.linkedin.com/in/pndspacas/" target="_blank"><i className="fa-brands fa-linkedin"></i></Link>
