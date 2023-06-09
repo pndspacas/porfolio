@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;    
-    height: 180rem;
+    height: 250rem;
 }
 
 .project-section {
@@ -72,6 +72,15 @@
 .img-container .github {
     height: 100%;
     width: 60%;
+}
+
+.img-container .quote {
+    width: 100%;
+}
+
+.img-container .pokemon {
+    height: 100%;
+    width: 80%;
 }
 
 .projects-card {

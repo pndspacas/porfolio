@@ -3,6 +3,8 @@ import "../styles/projects.css"
 import github from "../images/github.jpg"
 import boosted from "../images/boosted.jpg"
 import social from "../images/social.jpg"
+import quote from "../images/quote.jpg"
+import pokemon from "../images/pokemon.jpg"
 import {
     BrowserRouter as Router,
     Link
@@ -59,9 +61,37 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="projects">
+                        <div className="img-container">
+                            <img className="quote" src={quote} />
+                        </div>
+                        <div className="projects-card">
+                            <h3>Random Quotes</h3>
+                            <p>This is the Random Quotes a website that generates quotes from famouse influent people and some unknown ones</p>
+                            <div className='links'>
+                                <Link to="https://github.com/pndspacas/randomQuotes" target="_blank"><span>Code<i className="fa-brands fa-github"></i>
+                                </span></Link>
+                                <Link to="https://random-quotes-pndspacas.vercel.app/" target="_blank"><span>Live Demo<i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></span></Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projects">
+                        <div className="img-container">
+                            <img className="pokemon" src={pokemon} />
+                        </div>
+                        <div className="projects-card">
+                            <h3>Poke Dex</h3>
+                            <p>This is the Poke Dex a website that uses the PokemonAPI to fetch data for all 1281 thats exists with their images name and stats</p>
+                            <div className='links'>
+                                <Link to="https://github.com/pndspacas/pokemon" target="_blank"><span>Code<i className="fa-brands fa-github"></i>
+                                </span></Link>
+                                <Link to="https://pokemon-q4y5s57nb-pndspacas.vercel.app/" target="_blank"><span>Live Demo<i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></span></Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </Router>
+        </Router >
     )
 }
 
