@@ -59,9 +59,9 @@ span ~ span {
 .main-photo {
     height: 300px;
     width: 300px;
-    border-radius: 0% 50% 50% 0%;
+    border-radius: 0% 50% 50% 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-    border:1rem solid #f9f9f9;
+    border:0.5rem solid #f9f9f9;
     
 }
 
