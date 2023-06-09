@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import "../styles/contact.css"
 import {
-    BrowserRouter as Router,
-    Link
+    BrowserRouter as Router
 } from "react-router-dom";
 const Contact = () => {
     const [copySuccess, setCopySuccess] = useState('');
     const [show, setShow] = useState(true)
 
-    const copyToClipBoard = async (copyMe: any) => {
+    const copyToClipBoard = async (copyMe: string) => {
         await navigator.clipboard.writeText(copyMe);
         setCopySuccess('Copied!');
         setShow(!show)
