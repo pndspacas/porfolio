@@ -1,5 +1,5 @@
 import "../styles/projects.css"
-import { AllProjects } from './helpers/AllProjects'
+import { AllProjects } from '../api/AllProjects'
 import {
     BrowserRouter as Router,
     Link
