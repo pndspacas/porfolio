@@ -38,7 +38,7 @@ export const AllProjects = [
         id: 6,
         name: "Quizzer",
         description: "This is the Quizzer a website where you can try to guess all the 5 questions.",
-        gitHubUrl: "https://github.com/pndspacas/pokemon",
+        gitHubUrl: "https://github.com/pndspacas/quiz-app",
         liveDemoUrl: "https://quiz-app-pndspacas.vercel.app/",
     },
 
