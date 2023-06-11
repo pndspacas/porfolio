@@ -1,9 +1,9 @@
-import About from './components/about'
-import Contact from './components/contact'
-import Footer from './components/footer'
-import Main from './components/main'
-import { Navbar } from './components/navbar'
-import Projects from './components/projects'
+import About from './components/About'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Main from './components/Main'
+import { Navbar } from './components/Navbar'
+import Projects from './components/Projects'
 
 function App() {
 

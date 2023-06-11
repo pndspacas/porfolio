@@ -1,11 +1,9 @@
-
 import "../styles/projects.css"
+import { AllProjects } from './helpers/AllProjects'
 import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
-
-
 
 const Projects = () => {
     return (
@@ -15,65 +13,27 @@ const Projects = () => {
                     <h2>Projects</h2>
                     <p>Each project is a unique piece of development 🧩</p>
                     <div className="project-flex-container">
-                        <div className="projects">
-                            <div className="projects-card">
-                                <h3>GitHub Stalker</h3>
-                                <p>This is the Github Stalker, allow users to stalker the profiles that they want.</p>
-                                <div className='links'>
-                                    <Link to="https://github.com/pndspacas/github-search" target="_blank"><span>Code<i className="fa-brands fa-github"></i>
-                                    </span></Link>
-                                    <Link to="https://github-stalker-api.netlify.app/" target="_blank"><span>Live Demo<i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></span></Link>
+                        {AllProjects.map((project) => {
+                            return (
+                                <div className="projects" key={project.id}>
+                                    <div className="projects-card">
+                                        <h3>{project.name}</h3>
+                                        <p>{project.description}</p>
+                                        <div className='links'>
+                                            <Link to={project.gitHubUrl} target="_blank"><span>Code<i className="fa-brands fa-github"></i>
+                                            </span></Link>
+                                            <Link to={project.liveDemoUrl} target="_blank"><span>Live Demo<i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></span></Link>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="projects">
-                            <div className="projects-card">
-                                <h3>Social App</h3>
-                                <p>A MVP social app website is an online platform that allows users to create, like and delete posts.</p>
-                                <div className='links'>
-                                    <Link to="https://github.com/pndspacas/react-social-app" target="_blank"><span>Code<i className="fa-brands fa-github"></i>
-                                    </span></Link>
-                                    <Link to="https://react-social-app-5bef9.web.app/" target="_blank"><span>Live Demo<i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></span></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projects">
-                            <div className="projects-card">
-                                <h3>Boosted E-commerce</h3>
-                                <p>A MVP E-commerce website is an online platform that allows users to buy their favourite sneakers.</p>
-                                <div className='links'>
-                                    <Link to="https://github.com/pndspacas/boosted-ecommerce" target="_blank"><span>Code<i className="fa-brands fa-github"></i>
-                                    </span></Link>
-                                    <Link to="https://boosted-ecommerce.netlify.app/" target="_blank"><span>Live Demo<i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></span></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projects">
-                            <div className="projects-card">
-                                <h3>Random Quotes</h3>
-                                <p>This is the Random Quotes a website that generates quotes from famouse influent people and some unknown ones</p>
-                                <div className='links'>
-                                    <Link to="https://github.com/pndspacas/randomQuotes" target="_blank"><span>Code<i className="fa-brands fa-github"></i>
-                                    </span></Link>
-                                    <Link to="https://random-quotes-pndspacas.vercel.app/" target="_blank"><span>Live Demo<i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></span></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projects">
-                            <div className="projects-card">
-                                <h3>Poke Dex</h3>
-                                <p>This is the Poke Dex a website that uses the PokemonAPI to fetch data for all 1281 pokemons thats exists with their images name and stats</p>
-                                <div className='links'>
-                                    <Link to="https://github.com/pndspacas/pokemon" target="_blank"><span>Code<i className="fa-brands fa-github"></i>
-                                    </span></Link>
-                                    <Link to="https://pokemon-q4y5s57nb-pndspacas.vercel.app/" target="_blank"><span>Live Demo<i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></span></Link>
-                                </div>
-                            </div>
-                        </div>
+
+
+                            )
+                        })}
                     </div>
                 </div>
-            </div>
-        </Router >
+            </div >
+        </Router>
     )
 }
 
