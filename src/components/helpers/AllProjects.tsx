@@ -15,7 +15,7 @@ export const AllProjects = [
     },
     {
         id: 3,
-        name: "Boosted E-commerce",
+        name: "Boosted E-Commerce",
         description: "A MVP E-commerce website is an online platform that allows users to buy their favourite sneakers.",
         gitHubUrl: "https://github.com/pndspacas/boosted-ecommerce",
         liveDemoUrl: "https://boosted-ecommerce.netlify.app/",
