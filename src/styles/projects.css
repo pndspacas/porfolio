@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;    
-    height: 250rem;
+    height: 180rem;
 }
 
 .project-section {
@@ -12,7 +12,6 @@
     width: 100rem;
     align-items: flex-start;
     flex-direction: column;
-    padding-bottom: 10rem;
     
     
 }
@@ -36,15 +35,25 @@
     font-weight: 600;
 }
 
+.project-flex-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
 .projects {
-    width: 100rem;
+    width: 47%;
     height: 40rem;
     display: flex;
     align-items: center;
-    padding-left: 3rem;
+    justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-top: 5rem;
     border-radius: 5rem;
+    margin-bottom: 5rem;
     
 }
 
