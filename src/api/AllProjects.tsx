@@ -8,10 +8,10 @@ export const AllProjects = [
     },
     {
         id: 2,
-        name: "Social App",
-        description: "A MVP social app website is an online platform that allows users to create, like and delete posts.",
-        gitHubUrl: "https://github.com/pndspacas/react-social-app",
-        liveDemoUrl: "https://react-social-app-5bef9.web.app/",
+        name: "My Grades",
+        description: "This is My Grades a website that allows users to add every subject with their grades to sum their average",
+        gitHubUrl: "https://github.com/pndspacas/mygrades",
+        liveDemoUrl: "https://mygrades.vercel.app/",
     },
     {
         id: 3,
