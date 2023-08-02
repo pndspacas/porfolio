@@ -11,7 +11,14 @@ const Contact = () => {
         await navigator.clipboard.writeText(copyMe);
         setCopySuccess('Copied!');
         setShow(!show)
+
+        setTimeout(() => {
+            setCopySuccess('');
+        }, 5000);
+
+
     };
+
     return (
         <Router>
             <div id="contact" className='contact-container'>
