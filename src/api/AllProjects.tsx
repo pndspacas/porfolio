@@ -30,7 +30,7 @@ export const AllProjects = [
     {
         id: 5,
         name: "Poke Dex",
-        description: "This is the Poke Dex a website that uses the PokemonAPI to fetch data for all 1281 pokemons thats exists with their images name and stats.",
+        description: "This is the Poke Dex a website that uses the PokemonAPI to fetch data for all 1281 pokemons thats exists with their images, names and stats.",
         gitHubUrl: "https://github.com/pndspacas/pokemon",
         liveDemoUrl: "https://pokemon-q4y5s57nb-pndspacas.vercel.app/",
     },
