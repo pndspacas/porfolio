@@ -41,6 +41,13 @@ export const AllProjects = [
         gitHubUrl: "https://github.com/pndspacas/quiz-app",
         liveDemoUrl: "https://quiz-app-pndspacas.vercel.app/",
     },
+    {
+        id: 7,
+        name: "Temperature Controller",
+        description: "This is the Temperature Controller, a fun way to change temperatures values, but don't get it to low or to high.",
+        gitHubUrl: "https://github.com/pndspacas/temperature-controller",
+        liveDemoUrl: "https://pndspacas-temperature-controller.vercel.app/"
+    }
 
 
 ]
